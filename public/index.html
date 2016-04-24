@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Konato FreeCodeCamp URL Shortenr Microservice</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link href="/public/css/main.css" rel="stylesheet" type="text/css">
+	</head>
+	<body><div class="container">
+            <h1 class="header">
+                Konato FreeCodeCamp URL Shortenr Microservice
+            </h1>
+            <h3>Should replicate the following URL Shortenr microservice https://little-url.herokuapp.com/
+</h3>
+            <blockquote>
+                User stories:<ol>
+                <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+                <li>If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
+</li>
+                <li>When I visit that shortened URL, it will redirect me to my original link.</li>
+                
+                </ol>
+            </blockquote>
+             <p><em>Bonus</em> I've added a stats capability. It return the number of time the url has been redirected and the last time.</p>
+             <p><em>Bonus</em> Shortened links are save in a database and it's id is unique to you.</p>
+            <h3>Example usage:</h3>
+            <a href="https://freecodecampapi03-stephaner.c9users.io/new/https://www.adiaccelerator.com">https://freecodecampapi03-stephaner.c9users.io/new/https://www.adiaccelerator.com</a>
+            <br><a href="https://freecodecampapi03-stephaner.c9users.io/UURbDCiAh7oNLi7i">https://freecodecampapi03-stephaner.c9users.io/UURbDCiAh7oNLi7i</a>
+            <br><a href="https://freecodecampapi03-stephaner.c9users.io/stats/UURbDCiAh7oNLi7i">https://freecodecampapi03-stephaner.c9users.io/stats/UURbDCiAh7oNLi7i</a>
+            <h3>Example output:</h3>
+            <code>{"dest":"http://www.picglu.com","counter":4,"lastSeenAt":"2016-04-23T11:27:30.847Z","_id":"UURbDCiAh7oNLi7i"}
+            </code>
+            <code>
+                {"error":"This is not a valid URL"}
+            </code>
+            
+        </div>
+	
+</body>
+
+</html>
