@@ -45,19 +45,6 @@ function UrlShortApi() {
    }
    
 
-   this.redirect2 = function (req, res) {
-       var id = req.params.id
-        console.log("redirect called " + id)
-
-        urls.findOne( { _id: id }, 
-                    function(err, url){
-            if (err) return res.json(400, err)
-                console.log("redirect to: " + url.dest)
-                res.redirect(url.dest)
-            })
-      
-   }
-   
    this.redirect = function (req, res) {
        var id = req.params.id
         console.log("redirect called " + id)
